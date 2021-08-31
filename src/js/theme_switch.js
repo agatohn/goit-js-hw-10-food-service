@@ -9,8 +9,6 @@ const bodyItemClassList = document.querySelector('body').classList;
 
 function onLoad() {
   const themeFromLs = localStorage.getItem(CURRENT_THEME);
-  console.log(themeFromLs);
-
   if (themeFromLs === Theme.DARK) {
     updateTheme(Theme.DARK);
     updateLSTheme(Theme.DARK);
